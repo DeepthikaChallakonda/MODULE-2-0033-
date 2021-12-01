@@ -8,16 +8,16 @@ int main()
 	switch(a>0)
 	{
 		case 1:
-			printf("%d is positive");
+			printf("%d is positive",a);
 			break;
     case 0:
 	    switch(a<0)
 	    {
 		case 0:
-			printf("%d is zero");
+			printf("%d is zero",a);
 			break;
 		case 1:
-			printf("%d is negative");
+			printf("%d is negative",a);
 			break;
         }
     break;
