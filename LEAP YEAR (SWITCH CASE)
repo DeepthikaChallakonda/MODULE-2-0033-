@@ -1,0 +1,23 @@
+#include<stdio.h>
+int main()
+{
+	int r,y;
+	//y denotes the year
+	printf("enter the year");
+	scanf("%d",&y);
+	
+	r=y%400==0 ||	y%100==0 || y%4==0;
+	switch(r)
+	{
+		case 1:
+			printf("%d is a leap year",y);
+			break;
+		case 0:
+			printf("%d ia not a leap year",y);
+			break;
+    default:
+    	printf("is not a leap year");
+    }
+    return 0;
+}
+		
