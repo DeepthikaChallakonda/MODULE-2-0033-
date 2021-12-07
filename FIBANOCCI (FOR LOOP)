@@ -1,17 +1,21 @@
-#include<stdio.h>
-int main()
-{
-	int a=0,b=1,c,limit;
-	printf("enter the limit");
-	scanf("%d",&limit);
-	
-	for(c = 0; c <= limit; ++c);
-	{
-		c=a+b;
-		a=b;
-		b=c;
-		printf("\n%d",c);
-	} 
-	 printf("\t");
-	 return 0;
+#include <stdio.h>
+int main() {
+
+  int i, n;
+  int t1 = 0, t2 = 1;
+  int T = t1 + t2;
+
+  printf("Enter the number of terms: ");
+  scanf("%d", &n);
+
+  printf("Fibonacci Series: %d%d ", t1, t2);
+
+  for (i = 3; i <= n; ++i) {
+    printf("%d",T);
+    t1 = t2;
+    t2 = T;
+    T = t1 + t2;
+  }
+
+  return 0;
 }
